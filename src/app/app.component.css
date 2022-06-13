@@ -1,0 +1,84 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  width: 95vw;
+  height: 95vh;
+  overflow: hidden;
+  padding: 2.5vh 2.5vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+}
+
+.app-header, .app-footer {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  max-height: 2rem;
+}
+
+.app-footer {
+  align-items: flex-end;
+  padding: 2rem 0;
+}
+
+.app-content {
+  flex: 2;
+  overflow: auto;
+}
+
+.title-font {
+  font-size: 2rem;
+}
+
+.bg-default {
+  background-color: rgb(154, 194, 230);
+}
+
+.round-corners {
+  border-radius: 0.5em;
+}
+
+.books {
+  display: flex;
+  flex-direction: column;
+  margin: 1.75rem 0;
+  min-width: 170px;
+}
+
+.book {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1.75rem;
+  margin-bottom: 1.75rem;
+  font-size: 1.5rem;
+}
+
+.book:last-child {
+  margin-bottom: 0;
+}
+
+.book-state.lent {
+  color: rgb(180, 60, 0);
+}
+
+.book-state.available {
+  color: rgb(84, 130, 53);
+}
+
+@media screen and (max-width: 190px) {
+  .app-header {
+    max-height: 6rem;
+  }
+
+  .app-footer {
+    max-height: 2rem;
+  }
+}
+
+@media screen and (min-width: 191px) and (max-width: 360px) {
+  .app-header {
+    max-height: 4rem;
+  }
+}

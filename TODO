@@ -1,6 +1,6 @@
 Aufgaben:
-    ☐ chore: Reset Stylesheet einbinden
-    ☐ feat(layout): Design gemäß Wireframe umsetzen
-    ☐ feat(header): Titel dynamisch über String Interpolation setzen
-    ☐ feat(footer): Copyright Jahr (aktuelles Jahr) dynamisch über String Interpolation setzen
-    ☐ feat(list): Listen Elemente statisch im Template
+    ✔ chore: Reset Stylesheet einbinden @done(22-06-13 15:02)
+    ✔ feat(layout): Design gemäß Wireframe umsetzen @done(22-06-13 16:00)
+    ✔ feat(header): Titel dynamisch über String Interpolation setzen @done(22-06-13 16:00)
+    ✔ feat(footer): Copyright Jahr (aktuelles Jahr) dynamisch über String Interpolation setzen @done(22-06-13 16:00)
+    ✔ feat(list): Listen Elemente statisch im Template @done(22-06-13 16:00)
