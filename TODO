@@ -6,5 +6,5 @@ Aufgaben:
     ✔ feat(list): Listen Elemente statisch im Template @done(22-06-13 16:00)
     ✔ feat(list): Bücher werden als Klasse Book per Code hinzugefügt @done(22-06-14 09:50)
     ✔ feat(list): Wenn keine Bücher vorhanden sind bekommt der Benutzer einen Hinweis gemäß Wireframe @done(22-06-14 09:50)
-    ☐ feat(list): Button für hinzufügen von einem Buch
-    ☐ feat(form): Formular erstellen für hinzufügen oder bearbeiten eines Buches
+    ✔ feat(list): Button für hinzufügen von einem Buch @done(22-06-14 13:24)
+    ✔ feat(form): Formular erstellen für hinzufügen oder bearbeiten eines Buches @done(22-06-14 13:24)

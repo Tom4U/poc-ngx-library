@@ -11,6 +11,18 @@ export class AppComponent {
   title = 'Meine kleine Bibliothek';
   year = new Date().getFullYear();
   books: Book[] = [];
+  showForm = false;
+  bookForForm = new Book('');
+  availableStates = ['Verfügbar', 'Ausgeliehen'];
+
+  get bookForFormState(): string {
+    if (this.bookForForm.state === BookState.available)
+      return this.availableStates[0];
+
+    return this.availableStates[1];
+  }
+
+  private readonly storageKey = 'books';
 
   get hasNoBooks() {
     return this.books.length === 0;
@@ -20,20 +32,74 @@ export class AppComponent {
     this.loadBooks();
   }
 
-  private loadBooks(): void {
-    for (let i = 1; i < 6; i++) {
-      const title = `Buchtitel ${i}`;
-      const state = i % 2 === 0 ? BookState.available : BookState.lent;
-      this.generateBook(title, state);
-    }
+  toggleForm(): void {
+    this.showForm = !this.showForm;
   }
 
-  private generateBook(title: string, state: BookState): void {
-    const book = new Book(title);
-    book.state = state;
-    book.id = this.calculateNextId();
+  editBook(book: Book): void {
+    this.bookForForm = book;
 
-    this.books.push(book);
+    this.toggleForm();
+  }
+
+  storeBook(): void {
+    if (this.bookForForm.id === 0)
+      this.addBook();
+    else
+      this.updateBook();
+
+    this.bookForForm = new Book('');
+
+    this.persistBooks();
+    this.loadBooks();
+    this.toggleForm();
+  }
+
+  deleteBook(): void {
+    this.books = this.books.filter(book => book.id !== this.bookForForm.id);
+    this.persistBooks();
+    this.toggleForm();
+  }
+
+  formBookStateChange(event: Event): void {
+    const select = <HTMLSelectElement>event.target;
+    const selected = select.selectedOptions[0].value;
+
+    if (selected === this.availableStates[0])
+      this.bookForForm.state = BookState.available
+    else
+      this.bookForForm.state = BookState.lent
+  }
+
+  private addBook(): void {
+    this.bookForForm.id = this.calculateNextId();
+    this.books.push(this.bookForForm);
+  }
+
+  private updateBook(): void {
+    const updatedBooks = this.books.map(book => {
+      if (book.id === this.bookForForm.id)
+        return this.bookForForm;
+
+      return book;
+    });
+
+    this.books = updatedBooks;
+  }
+
+  private persistBooks(): void {
+    sessionStorage.setItem(this.storageKey, JSON.stringify(this.books));
+  }
+
+  private loadBooks(): void {
+    const rawBooks = sessionStorage.getItem(this.storageKey) || '[]';
+    const plainArray: Book[] = JSON.parse(rawBooks);
+
+    this.books = plainArray.map(bookObject => {
+      const book = new Book('');
+
+      return Object.assign(book, bookObject);
+    });
   }
 
   private calculateNextId(): number {

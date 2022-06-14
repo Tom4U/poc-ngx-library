@@ -17,6 +17,10 @@
   max-height: 2rem;
 }
 
+.actions {
+  margin: 1rem 0;
+}
+
 .app-footer {
   align-items: flex-end;
   padding: 2rem 0;
@@ -35,8 +39,77 @@
   background-color: rgb(154, 194, 230);
 }
 
+.bg-button-action {
+  background-color: rgb(169, 209, 142);
+}
+
+.bg-button-action:hover {
+  background-color: rgba(169, 209, 142, 0.7);
+}
+
+.bg-button-cancel {
+  background-color: rgb(255, 97, 97);
+}
+
+.bg-button-cancel {
+  background-color: rgba(255, 97, 97, 0.7);
+}
+
 .round-corners {
   border-radius: 0.5em;
+}
+
+.centered {
+  text-align: center;
+}
+
+.button {
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+}
+
+.button-small {
+  font-size: 1.25rem;
+  padding: 10px;
+}
+
+.button-big {
+  font-size: 1.5rem;
+  padding: 15px;
+}
+
+.form {
+ display: flex;
+ flex-direction: column;
+ max-width: 500px;
+}
+
+.form .actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.input {
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.select, .select option {
+  font-size: 1.5rem;
+}
+
+.select {
+  width: 100%;
+  cursor: pointer;
 }
 
 .books {
@@ -53,6 +126,10 @@
   padding: 1.75rem;
   margin-bottom: 1.75rem;
   font-size: 1.5rem;
+}
+
+.book {
+  cursor: pointer;
 }
 
 .no-books {
