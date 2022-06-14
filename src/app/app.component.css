@@ -46,13 +46,17 @@
   min-width: 170px;
 }
 
-.book {
+.book, .no-books {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 1.75rem;
   margin-bottom: 1.75rem;
   font-size: 1.5rem;
+}
+
+.no-books {
+  justify-content: center;
 }
 
 .book:last-child {

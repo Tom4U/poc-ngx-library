@@ -4,5 +4,5 @@ Aufgaben:
     ✔ feat(header): Titel dynamisch über String Interpolation setzen @done(22-06-13 16:00)
     ✔ feat(footer): Copyright Jahr (aktuelles Jahr) dynamisch über String Interpolation setzen @done(22-06-13 16:00)
     ✔ feat(list): Listen Elemente statisch im Template @done(22-06-13 16:00)
-    ☐ feat(list): Bücher werden als Klasse Book per Code hinzugefügt
-    ☐ feat(list): Wenn keine Bücher vorhanden sind bekommt der Benutzer einen Hinweis gemäß Wireframe
+    ✔ feat(list): Bücher werden als Klasse Book per Code hinzugefügt @done(22-06-14 09:50)
+    ✔ feat(list): Wenn keine Bücher vorhanden sind bekommt der Benutzer einen Hinweis gemäß Wireframe @done(22-06-14 09:50)
