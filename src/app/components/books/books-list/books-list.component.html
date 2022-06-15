@@ -1,0 +1,13 @@
+<app-book-item
+  *ngFor="let book of books"
+  [book]="book"
+  class="book default-font"
+  (click)="editBook.emit(book)">
+</app-book-item>
+
+<article *ngIf="hasNoBooks" class="no-books bg-default round-corners default-font">
+  <p>Es sind noch keine Bücher vorhanden</p>
+</article>
+
+<section class="app-actions centered" *ngIf="hasNoBooks" [actions]="actions"></section>
+

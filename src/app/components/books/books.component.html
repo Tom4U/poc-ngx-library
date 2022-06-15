@@ -1,0 +1,16 @@
+<app-master-layout [headerActions]="headerActions" [mainTitle]="title">
+  <app-books-list
+    class="books"
+    *ngIf="!showForm"
+    (addBook)="toggleForm()"
+    (editBook)="editBook($event)"
+    [books]="books"
+  ></app-books-list>
+  <app-book-form
+    *ngIf="showForm"
+    [book]="bookForForm"
+    (cancel)="cancelForm()"
+    (save)="storeBook()"
+    (delete)="deleteBook()"
+    ></app-book-form>
+</app-master-layout>

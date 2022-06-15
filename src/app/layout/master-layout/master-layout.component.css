@@ -1,0 +1,25 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  width: 95vw;
+  height: 95vh;
+  overflow: hidden;
+  padding: 2.5vh 2.5vw;
+}
+
+.app-header, .app-footer {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.app-footer {
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.app-content {
+  flex: 2;
+  overflow: auto;
+}

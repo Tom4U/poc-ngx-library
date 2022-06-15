@@ -3,3 +3,57 @@
 *, html {
   font-size: 16px;
 }
+
+.default-font {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+}
+
+.title-font {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+}
+
+.bg-default {
+  background-color: rgb(154, 194, 230);
+}
+
+.round-corners {
+  border-radius: 0.5em;
+}
+
+.centered {
+  text-align: center;
+}
+
+.button {
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+}
+
+.button-small {
+  font-size: 1.25rem;
+  padding: 10px;
+}
+
+.button-big {
+  font-size: 1.5rem;
+  padding: 15px;
+}
+
+.bg-button-action {
+  background-color: rgb(169, 209, 142);
+}
+
+.bg-button-action:hover {
+  background-color: rgba(169, 209, 142, 0.7);
+}
+
+.bg-button-cancel {
+  background-color: rgb(255, 97, 97);
+}
+
+.bg-button-cancel:hover {
+  background-color: rgba(255, 97, 97, 0.7);
+}

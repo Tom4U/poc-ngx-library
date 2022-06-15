@@ -1,0 +1,20 @@
+.app-actions {
+  margin: 1rem 0;
+}
+
+.book {
+  margin-bottom: 1.75rem;
+  cursor: pointer;
+}
+
+.book:last-child {
+  margin-bottom: 0;
+}
+
+.no-books {
+  display: flex;
+  justify-content: center;
+  padding: 1.75rem;
+  margin-bottom: 1.75rem;
+  font-size: 1.5rem;
+}

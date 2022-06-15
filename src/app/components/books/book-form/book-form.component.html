@@ -1,0 +1,15 @@
+<section class="form">
+  <p class="form-group">
+    <input type="text" class="input bg-default" placeholder="Buchtitel" [(ngModel)]="book.title">
+  </p>
+  <p class="form-group">
+    <select
+      class="app-book-state-select default-font"
+      (change)="formBookStateChange($event)"
+      [availableStates]="availableStates"
+      [currentState]="bookState"
+      ></select>
+  </p>
+  <section class="app-actions" [actions]="actions">
+  </section>
+</section>

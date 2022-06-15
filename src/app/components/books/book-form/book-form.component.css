@@ -1,0 +1,28 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+ }
+
+ .form .app-actions {
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .form-group {
+   display: flex;
+   justify-content: space-between;
+   margin: 0.5rem 0;
+ }
+
+ .input {
+   border: none;
+   font-size: 1.5rem;
+   border-radius: 5px;
+   width: 100%;
+ }
+
+ .app-book-state-select {
+   width: 100%;
+   cursor: pointer;
+ }

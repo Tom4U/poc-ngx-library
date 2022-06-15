@@ -1,0 +1,5 @@
+<article class="book bg-default round-corners" id="book-{{ book.id }}">
+  <header class="book-header">{{ book.title }}</header>
+  <p class="book-state lent" *ngIf="!book.isAvailable()">Ausgeliehen</p>
+  <p class="book-state available" *ngIf="book.isAvailable()">Verfügbar</p>
+</article>

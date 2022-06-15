@@ -1,0 +1,8 @@
+<option
+  *ngFor="let state of availableStates"
+  [selected]="currentState === state"
+  value="{{ state }}"
+  class="default-font"
+>
+  {{ state }}
+</option>

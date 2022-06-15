@@ -1,0 +1,6 @@
+<button
+  *ngFor="let action of actions"
+  class="button {{action.cssClass}}"
+  (click)="buttonClick(action)">
+  {{action.title}}
+</button>

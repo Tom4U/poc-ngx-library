@@ -1,0 +1,6 @@
+.books {
+  display: flex;
+  flex-direction: column;
+  margin: 1.75rem 0;
+  min-width: 170px;
+}

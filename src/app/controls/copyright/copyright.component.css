@@ -1,0 +1,7 @@
+.clean-break {
+  display: flex
+}
+
+.date {
+  flex-shrink: 0;
+}
