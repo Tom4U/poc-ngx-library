@@ -2,7 +2,7 @@
   *ngFor="let book of books"
   [book]="book"
   class="book default-font"
-  (click)="editBook.emit(book)">
+  (click)="selectBook(book)">
 </app-book-item>
 
 <article *ngIf="hasNoBooks" class="no-books bg-default round-corners default-font">

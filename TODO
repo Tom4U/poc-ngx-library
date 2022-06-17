@@ -9,3 +9,4 @@ Aufgaben:
     ✔ feat(list): Button für hinzufügen von einem Buch @done(22-06-14 13:24)
     ✔ feat(form): Formular erstellen für hinzufügen oder bearbeiten eines Buches @done(22-06-14 13:24)
     ✔ refactor: Unterschiedliche Components erstellen ohne Funktionalität zu verändern @done(22-06-15 14:25)
+    ✔ refactor: Service für Bücher implementieren @done(22-06-17 16:39)
